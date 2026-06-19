@@ -31,7 +31,11 @@ body {
 .about {
     display: flex;
     flex-direction: column;
-    gap: calc((var(--font-size) * var(--line-height)) / 2);
+    gap: calc(var(--font-size) * var(--line-height));
+}
+
+.about > p {
+    margin: 0;
 }
 
 .projectName {
