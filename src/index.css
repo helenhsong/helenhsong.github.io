@@ -3,6 +3,7 @@
 :root {
   --color-text: #000000;
   --color-muted: #959595;
+  --color-muted-strong: #6d6d6d;
   --color-divider: #cbcbcb4d;
   --color-underline: #e2e2e2;
   --color-bg: #ffffff;
@@ -37,4 +38,10 @@ body {
 a {
   color: inherit;
   cursor: pointer;
+}
+
+.link-arrow {
+  display: inline-block;
+  vertical-align: 0px;
+  margin-left: 2px;
 }

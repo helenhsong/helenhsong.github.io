@@ -39,6 +39,7 @@
 
 .name {
   color: var(--color-text);
+  font-weight: 500;
 }
 
 .role {
@@ -89,75 +90,11 @@
   background: var(--color-divider);
 }
 
-.list-row {
-  display: flex;
-  align-items: flex-start;
-  align-self: stretch;
-  gap: 32px;
-}
-
-.list-label {
-  flex-shrink: 0;
-  width: 103px;
-  color: var(--color-muted);
-  font-size: 14px;
-  line-height: 150%;
-}
-
-.list-items {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  gap: 16px;
-}
-
-.list-row:last-child .list-items {
-  gap: 20px;
-}
-
-.list-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  text-decoration: none;
-}
-
-.item-title {
-  align-self: stretch;
-  color: var(--color-text);
-  font-size: 14px;
-  line-height: 150%;
-  text-decoration: underline;
-  text-decoration-color: var(--color-underline);
-  text-underline-position: from-font;
-  transition: text-decoration-color 0.15s ease;
-}
-
-.list-item:hover .item-title {
-  text-decoration-color: #000000;
-}
-
-.item-desc {
-  color: var(--color-muted);
-  font-size: 14px;
-  line-height: 150%;
-}
-
 /* Small screens */
 
 @media (max-width: 420px) {
   .container {
     padding: 48px 20px;
     gap: 40px;
-  }
-
-  .list-row {
-    gap: 20px;
-  }
-
-  .list-label {
-    width: 72px;
   }
 }
