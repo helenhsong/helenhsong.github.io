@@ -11,7 +11,7 @@
   align-items: flex-start;
   width: 100%;
   max-width: 500px;
-  gap: 52px;
+  gap: 64px;
   padding: 72px 30px;
 }
 
@@ -80,14 +80,7 @@
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-  gap: 16px;
-}
-
-.divider {
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 1px;
-  background: var(--color-divider);
+  gap: 32px;
 }
 
 /* Small screens */

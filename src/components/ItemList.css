@@ -18,11 +18,11 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  gap: 16px;
+  gap: 20px;
 }
 
 .list-row:last-child .list-items {
-  gap: 20px;
+  gap: 16px;
 }
 
 .list-item {

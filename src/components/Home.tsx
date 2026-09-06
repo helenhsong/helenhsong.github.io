@@ -4,8 +4,8 @@ import { ItemList, type WorkItem } from './ItemList'
 
 const work: WorkItem[] = [
   {
-    title: 'Prime 2.0',
-    description: 'Architecture and product vision for Coinbase Prime',
+    title: 'Portfolio (2026)',
+    description: 'Last updated Sep 2026',
     href: 'https://www.figma.com/deck/vRfiD3q5KS25lShYY2q7um/Helen-Song-Portfolio--2026-?node-id=1178-3734&p=f&t=6qLeHUkxKVzKsu7j-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
   },
 ]
@@ -69,9 +69,7 @@ export function Home() {
         </header>
 
         <div className="lists">
-          <div className="divider" />
           <ItemList label="Work" items={work} />
-          <div className="divider" />
           <ItemList label="Personal" items={personal} />
         </div>
       </div>
