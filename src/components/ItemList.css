@@ -10,7 +10,7 @@
   width: 103px;
   color: var(--color-muted);
   font-size: 14px;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 .list-items {
@@ -37,7 +37,7 @@
   align-self: stretch;
   color: var(--color-text);
   font-size: 14px;
-  line-height: 150%;
+  line-height: 160%;
   text-decoration: underline;
   text-decoration-color: var(--color-underline);
   text-underline-position: from-font;
@@ -51,7 +51,7 @@
 .item-desc {
   color: var(--color-muted-strong);
   font-size: 14px;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 @media (max-width: 420px) {

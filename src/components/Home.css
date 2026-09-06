@@ -34,7 +34,7 @@
 .identity p {
   margin: 0;
   font-size: 14px;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 .name {
@@ -59,7 +59,7 @@
   align-self: stretch;
   color: var(--color-text);
   font-size: 14px;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 .text-link {
