@@ -1,0 +1,40 @@
+@import '@fontsource-variable/geist';
+
+:root {
+  --color-text: #000000;
+  --color-muted: #959595;
+  --color-divider: #cbcbcb4d;
+  --color-underline: #e2e2e2;
+  --color-bg: #ffffff;
+
+  color-scheme: light;
+  font-family: 'Geist Variable', system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
