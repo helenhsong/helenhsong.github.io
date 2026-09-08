@@ -1,11 +1,16 @@
 @import '@fontsource-variable/inter';
 
 :root {
-  --color-text: #000000;
-  --color-muted: #959595;
+  /* Aliased to @helenhsong/ui's design tokens (see node_modules/@helenhsong/ui
+     or https://github.com/helenhsong/ui) so this site stays in sync with the
+     shared design system rather than tracking its own copy of the palette. */
+  --color-text: var(--foreground);
+  --color-muted: var(--muted-foreground);
+  /* @helenhsong/ui only defines one muted tier — there's no token for this
+     darker secondary gray, so it stays a local override. */
   --color-muted-strong: #6d6d6d;
-  --color-underline: #e2e2e2;
-  --color-bg: #ffffff;
+  --color-underline: var(--border);
+  --color-bg: var(--background);
 
   color-scheme: light;
   font-synthesis: none;

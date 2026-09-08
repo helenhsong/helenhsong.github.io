@@ -9,7 +9,7 @@
   flex-shrink: 0;
   width: 103px;
   color: var(--color-muted);
-  font-size: 14px;
+  font-size: var(--text-sm);
   line-height: 160%;
 }
 
@@ -36,7 +36,7 @@
 .item-title {
   align-self: stretch;
   color: var(--color-text);
-  font-size: 14px;
+  font-size: var(--text-sm);
   line-height: 160%;
   text-decoration: underline;
   text-decoration-color: var(--color-underline);
@@ -50,7 +50,7 @@
 
 .item-desc {
   color: var(--color-muted-strong);
-  font-size: 14px;
+  font-size: var(--text-sm);
   line-height: 160%;
 }
 
