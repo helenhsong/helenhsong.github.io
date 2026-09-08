@@ -9,8 +9,8 @@ const work: WorkItem[] = [
     href: 'https://www.figma.com/deck/vRfiD3q5KS25lShYY2q7um/Helen-Song-Portfolio--2026-?node-id=1178-3734&p=f&t=6qLeHUkxKVzKsu7j-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
   },
   {
-    title: 'Resume (2026.public)',
-    description: 'Last updated Sep 2026',
+    title: 'Resume',
+    description: 'Last updated Mar 2026',
     href: 'https://drive.google.com/file/d/1A-tftcV-JtOhXn99XX9dvkeK7tQhU9Sh/view?usp=sharing',
   },
 ]
@@ -18,12 +18,12 @@ const work: WorkItem[] = [
 const personal: WorkItem[] = [
   {
     title: 'Timeline',
-    description: 'Make timeline images to share',
+    description: 'Make your own timeline',
     href: '#',
   },
   {
     title: 'Randomizer',
-    description: 'Random value generator',
+    description: 'Generate random values',
     href: '#',
   },
   {
