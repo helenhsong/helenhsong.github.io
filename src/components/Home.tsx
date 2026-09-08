@@ -18,7 +18,7 @@ const personal: WorkItem[] = [
   },
   {
     title: 'Randomizer',
-    description: 'Generate random numbers',
+    description: 'Random value generator',
     href: '#',
   },
   {
