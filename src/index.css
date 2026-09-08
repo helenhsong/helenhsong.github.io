@@ -6,9 +6,7 @@
      shared design system rather than tracking its own copy of the palette. */
   --color-text: var(--foreground);
   --color-muted: var(--muted-foreground);
-  /* @helenhsong/ui only defines one muted tier — there's no token for this
-     darker secondary gray, so it stays a local override. */
-  --color-muted-strong: #6d6d6d;
+  --color-label: var(--ring);
   --color-underline: var(--border);
   --color-bg: var(--background);
 
