@@ -16,7 +16,7 @@
 
 .list-label {
   color: var(--color-label);
-  font-size: var(--text-sm);
+  font-size: var(--text-xs);
   line-height: 160%;
 }
 

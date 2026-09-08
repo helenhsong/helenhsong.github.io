@@ -17,12 +17,11 @@
 
 /* Header */
 
+/* No longer its own flex group in Paper — Name/Intro are now direct
+   children of .container, sharing its 48px gap. `contents` keeps the
+   <header> landmark without adding a layout box. */
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  gap: 24px;
+  display: contents;
 }
 
 .identity {
