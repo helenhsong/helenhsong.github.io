@@ -8,6 +8,9 @@
   --color-muted: var(--muted-foreground);
   --color-label: var(--ring);
   --color-underline: var(--border);
+  /* No equivalent in @helenhsong/ui — closest tokens (--border, --muted)
+     aren't this light, so it stays a local override. */
+  --color-divider: #f4f4f4;
   --color-bg: var(--background);
 
   color-scheme: light;

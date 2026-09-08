@@ -5,15 +5,20 @@ import { ItemList, type WorkItem } from './ItemList'
 const work: WorkItem[] = [
   {
     title: 'Portfolio (2026)',
-    description: 'Last updated Sep 2026',
+    description: 'Selected work from Coinbase',
     href: 'https://www.figma.com/deck/vRfiD3q5KS25lShYY2q7um/Helen-Song-Portfolio--2026-?node-id=1178-3734&p=f&t=6qLeHUkxKVzKsu7j-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+  },
+  {
+    title: 'Resume (2026.public)',
+    description: 'Last updated Sep 2026',
+    href: 'https://drive.google.com/file/d/1A-tftcV-JtOhXn99XX9dvkeK7tQhU9Sh/view?usp=sharing',
   },
 ]
 
 const personal: WorkItem[] = [
   {
     title: 'Timeline',
-    description: 'Make diagrams to explain stuff',
+    description: 'Make timeline images to share',
     href: '#',
   },
   {
@@ -68,10 +73,8 @@ export function Home() {
           </div>
         </header>
 
-        <div className="lists">
-          <ItemList label="Work" items={work} />
-          <ItemList label="Personal" items={personal} />
-        </div>
+        <ItemList label="Work" items={work} />
+        <ItemList label="Personal" items={personal} />
       </div>
     </div>
   )

@@ -11,7 +11,7 @@
   align-items: flex-start;
   width: 100%;
   max-width: 500px;
-  gap: 64px;
+  gap: 52px;
   padding: 72px 30px;
 }
 
@@ -22,7 +22,7 @@
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-  gap: 32px;
+  gap: 24px;
 }
 
 .identity {
@@ -73,21 +73,11 @@
   text-decoration-color: #000000;
 }
 
-/* Lists */
-
-.lists {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  gap: 32px;
-}
-
 /* Small screens */
 
 @media (max-width: 420px) {
   .container {
     padding: 48px 20px;
-    gap: 40px;
+    gap: 32px;
   }
 }
