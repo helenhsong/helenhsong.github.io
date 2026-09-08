@@ -1,4 +1,4 @@
-@import '@fontsource-variable/geist';
+@import '@fontsource-variable/inter';
 
 :root {
   --color-text: #000000;
@@ -8,11 +8,20 @@
   --color-bg: #ffffff;
 
   color-scheme: light;
-  font-family: 'Geist Variable', system-ui, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Set on `html`, not `:root`, so this has the same specificity as
+   @helenhsong/ui's own `html { font-family: var(--font-sans) }` and wins
+   purely by load order (this file is imported after the package's
+   stylesheet) — not by an accidental specificity bump. That keeps this in
+   sync with the design system's theme font rather than silently
+   overriding it regardless of what the package sets. */
+html {
+  font-family: 'Inter Variable', system-ui, sans-serif;
 }
 
 * {
