@@ -29,7 +29,7 @@ const personal: WorkItem[] = [
   {
     title: 'Cyworld',
     description: '2000s-era profile page',
-    href: '#',
+    href: '/cyworld/',
   },
 ]
 
