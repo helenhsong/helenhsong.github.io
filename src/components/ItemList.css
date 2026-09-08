@@ -48,7 +48,6 @@
   align-items: center;
   color: var(--color-text);
   font-size: var(--text-sm);
-  font-weight: var(--font-weight-medium);
   line-height: 160%;
   text-decoration: underline;
   text-decoration-color: var(--color-underline);
