@@ -15,15 +15,10 @@ const work: WorkItem[] = [
   },
 ]
 
-const personal: WorkItem[] = [
+const projects: WorkItem[] = [
   {
-    title: 'Timeline',
-    description: 'Make your own timeline',
-    href: '#',
-  },
-  {
-    title: 'Randomizer',
-    description: 'Generate random values',
+    title: 'Sudoku',
+    description: 'A childhood favorite',
     href: '#',
   },
   {
@@ -44,9 +39,9 @@ export function Home() {
           </div>
           <div className="intro">
             <p>
-              Previously designed foundational experiences for institutions at
-              Coinbase. I enjoy simplifying complex systems, designing for
-              scale, and crafting polished interfaces.
+              Previously designed experiences for institutions at Coinbase. I
+              enjoy simplifying complex systems, designing for scale, and
+              crafting polished interfaces.
             </p>
             <p>
               Currently spending the year in Korea to recharge and work on
@@ -74,7 +69,7 @@ export function Home() {
         </header>
 
         <ItemList label="Work" items={work} />
-        <ItemList label="Personal" items={personal} />
+        <ItemList label="Projects" items={projects} />
       </div>
     </div>
   )

@@ -10,10 +10,7 @@ export type WorkItem = {
 export function ItemList({ label, items }: { label: string; items: WorkItem[] }) {
   return (
     <div className="list-section">
-      <div className="list-heading">
-        <span className="list-label">{label}</span>
-        <div className="list-divider" />
-      </div>
+      <span className="list-label">{label}</span>
       <div className="list-items">
         {items.map((item) => {
           const isExternal = item.href.startsWith('http')

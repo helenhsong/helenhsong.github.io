@@ -3,28 +3,13 @@
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-  gap: 16px;
-}
-
-.list-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  gap: 2px;
+  gap: 12px;
 }
 
 .list-label {
   color: var(--color-label);
   font-size: var(--text-xs);
   line-height: 160%;
-}
-
-.list-divider {
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 1px;
-  background-color: var(--color-divider);
 }
 
 .list-items {
