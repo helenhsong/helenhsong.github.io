@@ -1,5 +1,4 @@
 import './Home.css'
-import ArrowLink from './ArrowLink'
 import { ItemList, type WorkItem } from './ItemList'
 
 const work: WorkItem[] = [
@@ -51,12 +50,10 @@ export function Home() {
                 rel="noreferrer"
               >
                 LinkedIn
-                <ArrowLink className="link-arrow" />
               </a>{' '}
               or reach out via{' '}
               <a className="text-link" href="mailto:helenhsong@gmail.com">
                 email
-                <ArrowLink className="link-arrow" />
               </a>
               .
             </p>
