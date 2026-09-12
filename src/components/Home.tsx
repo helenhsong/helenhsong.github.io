@@ -17,11 +17,6 @@ const work: WorkItem[] = [
 
 const projects: WorkItem[] = [
   {
-    title: 'Sudoku',
-    description: 'A childhood favorite',
-    href: '#',
-  },
-  {
     title: 'Cyworld',
     description: '2000s-era profile page',
     href: '/cyworld/',
