@@ -1,5 +1,25 @@
 import './Home.css'
+import ReactMarkdown, { type Components } from 'react-markdown'
+import about from '../content/about.md?raw'
 import { ItemList, type WorkItem } from './ItemList'
+
+const aboutComponents: Components = {
+  a({ children, href, title }) {
+    const isExternal = href?.startsWith('http')
+
+    return (
+      <a
+        className="text-link"
+        href={href}
+        title={title}
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'noreferrer' : undefined}
+      >
+        {children}
+      </a>
+    )
+  },
+}
 
 const work: WorkItem[] = [
   {
@@ -32,31 +52,7 @@ export function Home() {
             <p className="role">Product Designer in New York</p>
           </div>
           <div className="intro">
-            <p>
-              Previously designed experiences for institutions at Coinbase. I
-              enjoy simplifying complex systems, designing for scale, and
-              crafting polished interfaces.
-            </p>
-            <p>
-              Currently spending the year in Korea to recharge and work on
-              some fun things. Open to new opportunities beginning fall 2026.
-            </p>
-            <p>
-              You can find me on{' '}
-              <a
-                className="text-link"
-                href="https://linkedin.com/in/helenhsong"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn
-              </a>{' '}
-              or reach out via{' '}
-              <a className="text-link" href="mailto:helenhsong@gmail.com">
-                email
-              </a>
-              .
-            </p>
+            <ReactMarkdown components={aboutComponents}>{about}</ReactMarkdown>
           </div>
         </header>
 
