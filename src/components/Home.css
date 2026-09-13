@@ -66,7 +66,7 @@
 @keyframes line-fade-in {
   from {
     opacity: 0;
-    transform: translateY(5px);
+    transform: translateY(8px);
   }
 
   to {
