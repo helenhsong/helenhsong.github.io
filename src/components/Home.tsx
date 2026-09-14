@@ -57,7 +57,7 @@ export function Home() {
         </header>
 
         <ItemList label="Work" items={work} />
-        <ItemList label="Projects" items={projects} />
+        <ItemList label="Personal" items={projects} />
       </div>
     </div>
   )
