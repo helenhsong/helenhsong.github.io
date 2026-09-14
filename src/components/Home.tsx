@@ -25,7 +25,7 @@ const work: WorkItem[] = [
   {
     title: 'Portfolio (2026)',
     description: 'Selected work from Coinbase',
-    href: 'https://www.figma.com/deck/vRfiD3q5KS25lShYY2q7um/Helen-Song-Portfolio--2026-?node-id=1178-3734&p=f&t=6qLeHUkxKVzKsu7j-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+    href: 'https://www.figma.com/deck/ncONxfKl4K5TprIrdEd3rS/H-Portfolio--2026.async-?node-id=1178-3734&p=f&t=b0mWomPll1dHlVKR-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
   },
   {
     title: 'Resume',
