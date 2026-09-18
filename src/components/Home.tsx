@@ -36,6 +36,11 @@ const work: WorkItem[] = [
 
 const projects: WorkItem[] = [
   {
+    title: 'Cursor Playground',
+    description: 'Tiny experiments in pointer play',
+    href: 'https://helenhsong.com/cursor-playground',
+  },
+  {
     title: 'Cyworld',
     description: '2000s-era profile page',
     href: '/cyworld/',
