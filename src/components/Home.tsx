@@ -42,7 +42,7 @@ const projects: WorkItem[] = [
   },
   {
     title: 'Cursor Playground',
-    description: 'A few experiments',
+    description: 'Interaction explorations',
     href: '/cursor-playground',
   },
 ]
