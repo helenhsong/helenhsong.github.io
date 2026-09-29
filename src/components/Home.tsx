@@ -29,7 +29,7 @@ const work: WorkItem[] = [
   },
   {
     title: 'Resume',
-    description: 'Last updated Mar 2026',
+    description: 'Last updated Sep 2026',
     href: 'https://drive.google.com/file/d/1A-tftcV-JtOhXn99XX9dvkeK7tQhU9Sh/view?usp=sharing',
   },
 ]
