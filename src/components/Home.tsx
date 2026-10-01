@@ -24,7 +24,7 @@ const aboutComponents: Components = {
 const work: WorkItem[] = [
   {
     title: 'Portfolio (2026)',
-    description: 'Selected work from Coinbase',
+    description: 'Selected work',
     href: 'https://www.figma.com/deck/ncONxfKl4K5TprIrdEd3rS/Helen-Song-Portfolio--2026.async-?node-id=1178-3734&p=f&t=aevSxwGDHqQ2TrsI-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
   },
   {
