@@ -1,4 +1,4 @@
-Previously designed for institutions at Coinbase. I enjoy simplifying complex systems, designing for scale, and crafting polished interfaces.
+Previously at Coinbase, where I shaped foundational experiences for institutions. I enjoy simplifying complex systems, designing for scale, and crafting polished interfaces.
 
 Currently spending the year in Korea to recharge and work on some fun things. Open to new opportunities beginning fall 2026.
 
