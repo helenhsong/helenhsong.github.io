@@ -41,6 +41,11 @@ const projects: WorkItem[] = [
     href: '/cyworld/',
   },
   {
+    title: 'Textile',
+    description: 'Typewriter for stitched text',
+    href: '/textile/',
+  },
+  {
     title: 'Cursor Playground',
     description: 'Interaction explorations',
     href: '/cursor-playground',
