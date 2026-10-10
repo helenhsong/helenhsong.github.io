@@ -52,6 +52,10 @@ const projects: WorkItem[] = [
   },
 ]
 
+// The header's lines fade in first (see Home.css); the lists carry on from there.
+const workFadeStart = 5
+const projectsFadeStart = workFadeStart + 1 + work.length
+
 export function Home() {
   return (
     <div className="page">
@@ -66,8 +70,8 @@ export function Home() {
           </div>
         </header>
 
-        <ItemList label="Work" items={work} />
-        <ItemList label="Personal" items={projects} />
+        <ItemList label="Work" items={work} fadeStart={workFadeStart} />
+        <ItemList label="Personal" items={projects} fadeStart={projectsFadeStart} />
       </div>
     </div>
   )

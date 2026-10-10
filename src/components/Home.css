@@ -43,28 +43,10 @@
   --fade-delay: 280ms;
 }
 
-.container > .list-section:nth-child(2) .list-label {
-  --fade-delay: 340ms;
-}
-
-.container > .list-section:nth-child(2) .list-item:nth-child(1) {
-  --fade-delay: 400ms;
-}
-
-.container > .list-section:nth-child(2) .list-item:nth-child(2) {
-  --fade-delay: 460ms;
-}
-
-.container > .list-section:nth-child(3) .list-label {
-  --fade-delay: 520ms;
-}
-
-.container > .list-section:nth-child(3) .list-item:nth-child(1) {
-  --fade-delay: 580ms;
-}
-
-.container > .list-section:nth-child(3) .list-item:nth-child(2) {
-  --fade-delay: 640ms;
+/* List lines continue the 60ms stagger from the index ItemList gives them. */
+.list-label,
+.list-item {
+  --fade-delay: calc(40ms + var(--fade-index, 0) * 60ms);
 }
 
 @keyframes line-fade-in {
