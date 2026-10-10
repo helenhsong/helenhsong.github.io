@@ -1,6 +1,7 @@
 import './Home.css'
 import ReactMarkdown, { type Components } from 'react-markdown'
 import about from '../content/about.md?raw'
+import { fadeIndex } from './fade'
 import { ItemList, type WorkItem } from './ItemList'
 
 const aboutComponents: Components = {
@@ -52,22 +53,40 @@ const projects: WorkItem[] = [
   },
 ]
 
+// The about text's paragraphs, which fade in after the name and role.
+const introLines = about.trim().split(/\n\s*\n/).length
+
 export function Home() {
+  // Number each intro paragraph as it renders, after the two identity lines.
+  let introIndex = 2
+  const introComponents: Components = {
+    ...aboutComponents,
+    p({ children }) {
+      return <p style={fadeIndex(introIndex++)}>{children}</p>
+    },
+  }
+  const workStart = 2 + introLines
+  const personalStart = workStart + 1 + work.length
+
   return (
     <div className="page">
       <div className="container">
         <header className="header">
           <div className="identity">
-            <p className="name">Helen Song</p>
-            <p className="role">Product Designer in New York</p>
+            <p className="name" style={fadeIndex(0)}>
+              Helen Song
+            </p>
+            <p className="role" style={fadeIndex(1)}>
+              Product Designer in New York
+            </p>
           </div>
           <div className="intro">
-            <ReactMarkdown components={aboutComponents}>{about}</ReactMarkdown>
+            <ReactMarkdown components={introComponents}>{about}</ReactMarkdown>
           </div>
         </header>
 
-        <ItemList label="Work" items={work} />
-        <ItemList label="Personal" items={projects} />
+        <ItemList label="Work" items={work} fadeStart={workStart} />
+        <ItemList label="Personal" items={projects} fadeStart={personalStart} />
       </div>
     </div>
   )

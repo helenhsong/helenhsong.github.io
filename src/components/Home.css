@@ -20,55 +20,9 @@
 .list-label,
 .list-item {
   animation: line-fade-in 800ms cubic-bezier(0.37, 0, 0.63, 1) both;
-  animation-delay: var(--fade-delay, 0ms);
-}
-
-.identity p:nth-child(1) {
-  --fade-delay: 40ms;
-}
-
-.identity p:nth-child(2) {
-  --fade-delay: 100ms;
-}
-
-.intro > p:nth-child(1) {
-  --fade-delay: 160ms;
-}
-
-.intro > p:nth-child(2) {
-  --fade-delay: 220ms;
-}
-
-.intro > p:nth-child(3) {
-  --fade-delay: 280ms;
-}
-
-.container > .list-section:nth-child(2) .list-label {
-  --fade-delay: 340ms;
-}
-
-.container > .list-section:nth-child(2) .list-item:nth-child(1) {
-  --fade-delay: 400ms;
-}
-
-.container > .list-section:nth-child(2) .list-item:nth-child(2) {
-  --fade-delay: 460ms;
-}
-
-.container > .list-section:nth-child(3) .list-label {
-  --fade-delay: 520ms;
-}
-
-.container > .list-section:nth-child(3) .list-item:nth-child(1) {
-  --fade-delay: 580ms;
-}
-
-.container > .list-section:nth-child(3) .list-item:nth-child(2) {
-  --fade-delay: 640ms;
-}
-
-.container > .list-section:nth-child(3) .list-item:nth-child(3) {
-  --fade-delay: 700ms;
+  /* Lines fade in one after another, 60ms apart, in page order. Each
+     line's place in that order is set as --fade-index where it renders. */
+  animation-delay: calc(40ms + var(--fade-index, 0) * 60ms);
 }
 
 @keyframes line-fade-in {
