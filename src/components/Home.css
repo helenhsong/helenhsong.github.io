@@ -67,6 +67,10 @@
   --fade-delay: 640ms;
 }
 
+.container > .list-section:nth-child(3) .list-item:nth-child(3) {
+  --fade-delay: 700ms;
+}
+
 @keyframes line-fade-in {
   from {
     opacity: 0;
