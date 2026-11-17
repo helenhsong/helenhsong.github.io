@@ -16,9 +16,7 @@
 }
 
 .identity p,
-.intro > p,
-.list-label,
-.list-item {
+.intro > p {
   animation: line-fade-in 800ms cubic-bezier(0.37, 0, 0.63, 1) both;
   animation-delay: var(--fade-delay, 0ms);
 }
@@ -43,12 +41,6 @@
   --fade-delay: 280ms;
 }
 
-/* List lines continue the 60ms stagger from the index ItemList gives them. */
-.list-label,
-.list-item {
-  --fade-delay: calc(40ms + var(--fade-index, 0) * 60ms);
-}
-
 @keyframes line-fade-in {
   from {
     opacity: 0;
@@ -63,8 +55,7 @@
 
 /* Header */
 
-/* Back to its own flex group in Paper — Name/Intro share a tighter 32px
-   gap, separate from the 64px gap between the header and each list. */
+/* Keep the identity and about copy visually distinct without separating them. */
 .header {
   display: flex;
   flex-direction: column;
@@ -132,9 +123,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .identity p,
-  .intro > p,
-  .list-label,
-  .list-item {
+  .intro > p {
     animation: none;
   }
 }
