@@ -1,4 +1,4 @@
-Born and raised in Seattle, now based in New York.
+I am a designer from Seattle, now based in New York.
 
 Previously, I designed core institutional experiences at [Coinbase](https://www.coinbase.com/). I enjoy simplifying complex systems, designing for scale, and crafting polished interfaces.
 
